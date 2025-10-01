@@ -14,7 +14,6 @@
         <p class="text-gray-500">Create your Football News account</p>
       </div>
 
-      <!-- Form Errors Display -->
       {% if form.non_field_errors %}
         <div class="mb-6">
           {% for error in form.non_field_errors %}
@@ -82,7 +81,6 @@
         </button>
       </form>
 
-      <!-- Messages Display -->
       {% if messages %}
         <div class="mt-6">
           {% for message in messages %}
@@ -110,6 +108,11 @@
             Sign In
           </a>
         </p>
+        <div class="mt-4 border-t pt-4">
+            <button onclick="showToast('Sample Title', 'This is a sample message for the toast notification.')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              Click to Show Toast
+            </button>
+        </div>
       </div>
       </div>
     </div>

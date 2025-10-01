@@ -9,14 +9,12 @@
 <div class="bg-gray-50 w-full min-h-screen">
   <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     
-    <!-- Back Navigation -->
     <div class="mb-6">
       <a href="{% url 'main:show_main' %}" class="text-gray-600 hover:text-gray-900 font-medium transition-colors">
         ← Back to News
       </a>
     </div>
     
-    <!-- Form -->
     <div class="bg-white rounded-lg border border-gray-200 p-6 sm:p-8 form-style">
       <div class="mb-8">
         <h1 class="text-2xl font-bold text-gray-900 mb-2">Edit News</h1>
@@ -51,6 +49,12 @@
           </button>
         </div>
       </form>
+
+      <div class="mt-8 border-t pt-6 text-center">
+        <button onclick="showToast('Sample Title', 'This is a sample message for the toast notification.')" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          Click to Show Toast
+        </button>
+      </div>
     </div>
   </div>
 </div>
